@@ -229,9 +229,118 @@ person();
 // 3.1
 /*3. Sonlar massivini tuzing va barcha elementlarning o‘rtacha qiymatini toping.*/
 
-let sonlar = [10, 20, 30, 40, 50];
-let jami = 0;
-for (let i = 0; i < sonlar.length; i++) {
-  jami += sonlar[i];
-}
-console.log(jami / sonlar.length);
+// let sonlar = [10, 20, 30, 40, 50];
+// let jami = 0;
+// for (let i = 0; i < sonlar.length; i++) {
+//   jami += sonlar[i];
+// }
+// console.log(jami / sonlar.length);
+
+// 4.1
+/*4. Kalit-qiymat juftliklari bilan ob'ektlar massivini yarating va
+ aniq kalit-qiymat juftligi bilan ob'ektlarni filtrlang.*/
+// shunga tushanmadim!!!!
+
+// Ob'ektlarni massiv sifatida yaratish
+
+// var objectsArray = [
+//   { nomi: "Obekt1", qiymati: 2 },
+//   { nomi: "Obekt2", qiymati: 5 },
+//   { nomi: "Obekt3", qiymati: 7 },
+//   { nomi: "Obekt4", qiymati: 10 },
+// ];
+
+// // Berilgan kalit-qiymatga mos keluvchi ob'ektlarni filtrlash
+// function filterObjectsByKeyValue(array, key, value) {
+//   return array.filter(function (obj) {
+//     return obj[key] === value;
+//   });
+// }
+
+// Misol: qiymati 5 bo'lgan ob'ektlarni tanlash
+// var filteredObjects = filterObjectsByKeyValue(objectsArray, "qiymati", 5);
+// console.log(filteredObjects); // Ekranga chiqarish
+
+// 5
+/*5. Raqamlar massivini tuzing va massivdagi maksimal qiymatni toping.*/
+
+// var number = [1, 5, 8, 3, 89, 28, 51, 5, 5, 18];
+
+// var maxNumber = Math.max.apply(null, number);
+
+// console.log(maxNumber);
+
+// 6
+/* Satrlar massivini yarating va massivni alifbo tartibida tartiblang. */
+
+// var names = ["Azim", "Sardor", "urus", "Kazak", "Uzbek"];
+// names.sort();
+// console.log(names);
+
+// 7
+// Raqamlar massivini tuzing va massivdagi aniq sonning indeksini toping.
+
+// let sonlar = [10, 20, 30, 40, 50];
+
+// var aniqSon = 20;
+
+// for (let i = 0; i < sonlar.length; i++) {
+//   if (aniqSon === sonlar[i]) {
+//     console.log(i);
+//   }
+// }
+
+// 8
+/*Kalit-qiymat juftliklari bilan ob'ektlar massivini yarating va 
+ massivni ma'lum bir kalit asosida tartiblang. */
+// tushunolmadim!!!!!
+
+// function sortByKey(array, key) {
+//   return array.sort(function (a, b) {
+//     var x = a[key];
+//     var y = b[key];
+//     return x < y ? -1 : x > y ? 1 : 0;
+//   });
+// }
+
+// var student = [
+//   { name: "Azimbek", age: 24 },
+//   { name: "Kozim", age: 14 },
+//   { name: "Asadbek", age: 18 },
+//   { name: "Sardor", age: 25 },
+// ];
+
+// var sortedArray = sortByKey(student, "qiymati");
+// console.log(sortedArray);
+
+// // Ob'ektlarni massiv sifatida yaratish
+// var objectsArray = [
+//   { nomi: "Ob'ekt1", qiymati: 5 },
+//   { nomi: "Ob'ekt2", qiymati: 2 },
+//   { nomi: "Ob'ekt3", qiymati: 7 },
+//   { nomi: "Ob'ekt4", qiymati: 3 },
+// ];
+
+// // Qiymat asosida massivni tartiblash (masalan, 'nomi' bo'yicha)
+// var sortedArray = sortByKey(objectsArray, "qiymati");
+// console.log(sortedArray); // Ekranga chiqarish
+
+// 9
+// Ikkita sonlar massivi yarating va ularni bitta massivga birlashtiring.
+
+// let sonlar = [10, 20, 30, 40, 50];
+// let sonlar2 = [10, 20, 30, 40, 50];
+
+// console.log(...sonlar2, ...sonlar);
+// console.log(sonlar2.concat(sonlar));
+
+// 10
+// Satrlar massivini yarating va massivdan dublikatlarni olib tashlang.
+// tushunmadim !!!!
+
+// var fruits = ["apple", "banana", "orange", "apple", "kiwi", "banana"];
+
+// var uniqueStringsArray = fruits.filter(function (value, index, array) {
+//   return array.indexOf(value) === index;
+// });
+// console.log(uniqueStringsArray);
