@@ -157,10 +157,10 @@ talabalarni roʻyxatdan oʻchirish va tizimdagi barcha talabalar roʻyxatini ko�
 
 // console.log(person);
 
-function person(shaxs) {
-  var person = {};
-}
-person();
+// function person(shaxs) {
+//   var person = {};
+// }
+// person();
 
 /*
 1. Create an array of numbers and return the sum of all elements.
@@ -199,6 +199,7 @@ person();
 // );
 
 // 2.1 function
+//2. Create an array of strings and return the length of the longest string.
 //2. Satrlar massivini yarating va eng uzun satr uzunligini qaytaring.
 
 // var fruits = ["olma", "anor", "shaftoli", "behi"];
@@ -228,6 +229,7 @@ person();
 
 // 3.1
 /*3. Sonlar massivini tuzing va barcha elementlarning o‘rtacha qiymatini toping.*/
+//3. Create an array of numbers and find the average of all elements.
 
 // let sonlar = [10, 20, 30, 40, 50];
 // let jami = 0;
@@ -257,7 +259,7 @@ person();
 //   });
 // }
 
-// Misol: qiymati 5 bo'lgan ob'ektlarni tanlash
+// // Misol: qiymati 5 bo'lgan ob'ektlarni tanlash
 // var filteredObjects = filterObjectsByKeyValue(objectsArray, "qiymati", 5);
 // console.log(filteredObjects); // Ekranga chiqarish
 
@@ -344,3 +346,77 @@ person();
 //   return array.indexOf(value) === index;
 // });
 // console.log(uniqueStringsArray);
+
+//  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*
+1. Satrni kiritish sifatida qabul qiluvchi va qatordagi so‘zlar sonini qaytaruvchi funksiya yozing.
+
+2. Ob'ektlar uchun xossalari bo'lgan xarid qilish savatini ifodalovchi ob'ekt yarating
+ (nom va narx bo'yicha xususiyatlarga ega ob'ektlar majmuasi). Savatcha ob'ektini argument
+  sifatida qabul qiladigan va savatdagi barcha elementlarning umumiy qiymatini qaytaradigan funksiyani yozing.
+
+3. Raqamni kiritish sifatida qabul qiladigan va agar son tub son bo‘lsa, rost, aks holda noto‘g‘ri
+ qiymatini qaytaradigan funksiya yozing.
+
+4. Ism, sinf va mavzular (satrlar massivi) xususiyatlariga ega talabani ifodalovchi ob'ekt yarating.
+ Talaba obyektini argument sifatida oladigan va talabaning o‘rtacha bahosini qaytaruvchi funksiya yozing.
+
+5. Satrni kirish sifatida qabul qiladigan va barcha unlilar “o” harfi bilan almashtirilgan qatorni qaytaradigan funksiya yozing.
+
+6. Sarlavha, muallif va sahifalar xususiyatlariga ega kitobni ifodalovchi ob'ekt yarating.
+ Kitob ob'ektini argument sifatida qabul qiladigan va "muallif bo'yicha sarlavha, sahifalar sahifalari"
+  formatida qatorni qaytaradigan funktsiyani yozing.
+
+7. Raqamlar massivini kirish sifatida qabul qiluvchi va massivdagi barcha sonlar yig‘indisini qaytaruvchi funksiya yozing.
+
+8. Restoranni nomi, menyusi (mahsulot va narx boʻyicha xossalari boʻlgan obʼyektlar majmuasi)
+ va vegan (restoran vegan variantlari xizmat qilishini koʻrsatuvchi mantiqiy) koʻrsatuvchi obyekt yarating.
+  Restoran ob'ektini argument sifatida qabul qiladigan va barcha menyu elementlari va narxlarni
+   ko'rsatadigan qatorni qaytaradigan funktsiyani yozing.
+
+9. Satrni kirish sifatida qabul qiladigan va agar satr palindrom bo'lsa, rost, aks holda noto'g'ri qiymatini
+ qaytaradigan funksiya yozing.
+
+10. Egasi, balansi va tranzaksiyalari uchun xossalari bo‘lgan bank hisobini ifodalovchi ob’ekt yarating
+ (sana va summa bo‘yicha xossalari bo‘lgan obyektlar massivi). Bank hisobi obyektini argument sifatida oladigan va
+  hisobning joriy qoldig‘ini qaytaruvchi funksiya yozing.*/
+
+// M 1
+
+// function countWords(sentence) {
+//   // Bo'shliqlarni olib tashlash
+//   sentence = sentence.trim();
+
+//   // So'zlar sonini hisoblash
+//   if (sentence === "") {
+//     return 0; // agar satr bo'sh bo'lsa, 0 qaytariladi
+//   } else {
+//     // So'zlarni bo'shliklar orqali ajratib olish
+//     const words = sentence.split(/\s+/);
+//     return words.length; // So'zlar sonini qaytarish
+//   }
+// }
+
+// // Misol:
+// const sentence = "Bu bir misol satr";
+// console.log("So'zlar soni:", countWords(sentence));
+
+// M2
+
+class students {
+  constructor(name, surname, age) {
+    (this.name = name), (this.surname = surname);
+    this.age = age;
+  }
+  fullName(masseg = "not masseg") {
+    return `${this.name} ${this.surname} ${masseg}`;
+  }
+}
+
+var student1 = new students("Azimbek", "Turakulov", 25);
+var student2 = new students("Sardor", "Suyunov", 28);
+var student3 = new students("Asadbek", "Abduvoitov", 18);
+
+console.log(student1.fullName("I.m student"));
+console.log(student2.fullName());
+console.log(student3.fullName());
