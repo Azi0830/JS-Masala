@@ -204,7 +204,7 @@ talabalarni roʻyxatdan oʻchirish va tizimdagi barcha talabalar roʻyxatini ko�
 
 // var fruits = ["olma", "anor", "shaftoli", "behi"];
 
-// function engUzun(satrlar) {
+// function engUzun(fruits) {
 //   let engUzunSatr = 0;
 //   for (let i = 0; i < fruits.length; i++) {
 //     if (fruits[i].length > engUzunSatr) {
@@ -237,6 +237,7 @@ talabalarni roʻyxatdan oʻchirish va tizimdagi barcha talabalar roʻyxatini ko�
 //   jami += sonlar[i];
 // }
 // console.log(jami / sonlar.length);
+// console.log();
 
 // 4.1
 /*4. Kalit-qiymat juftliklari bilan ob'ektlar massivini yarating va
@@ -259,12 +260,12 @@ talabalarni roʻyxatdan oʻchirish va tizimdagi barcha talabalar roʻyxatini ko�
 //   });
 // }
 
-// // Misol: qiymati 5 bo'lgan ob'ektlarni tanlash
+// Misol: qiymati 5 bo'lgan ob'ektlarni tanlash
 // var filteredObjects = filterObjectsByKeyValue(objectsArray, "qiymati", 5);
 // console.log(filteredObjects); // Ekranga chiqarish
 
-// 5
-/*5. Raqamlar massivini tuzing va massivdagi maksimal qiymatni toping.*/
+// // 5
+// /*5. Raqamlar massivini tuzing va massivdagi maksimal qiymatni toping.*/
 
 // var number = [1, 5, 8, 3, 89, 28, 51, 5, 5, 18];
 
@@ -403,20 +404,92 @@ talabalarni roʻyxatdan oʻchirish va tizimdagi barcha talabalar roʻyxatini ko�
 
 // M2
 
-class students {
-  constructor(name, surname, age) {
-    (this.name = name), (this.surname = surname);
-    this.age = age;
-  }
-  fullName(masseg = "not masseg") {
-    return `${this.name} ${this.surname} ${masseg}`;
+// class students {
+//   constructor(name, surname, age) {
+//     (this.name = name), (this.surname = surname);
+//     this.age = age;
+//   }
+//   fullName(masseg = "not masseg") {
+//     return `${this.name} ${this.surname} ${masseg}`;
+//   }
+// }
+
+// var student1 = new students("Azimbek", "Turakulov", 25);
+// var student2 = new students("Sardor", "Suyunov", 28);
+// var student3 = new students("Asadbek", "Abduvoitov", 18);
+
+// console.log(student1.fullName("I.m student"));
+// console.log(student2.fullName());
+// console.log(student3.fullName());
+
+// class student {
+//   constructor(name, surname, age) {
+//     this.name = name;
+//     this.surname = surname;
+//     this.age = age;
+//     this.fullNam = function (text = "not") {
+//       `${this.name} ${this.surname}${text}`;
+//     };
+//   }
+// }
+
+// var user1 = new student("Asadbek", "Abduvoitov", 18);
+// var user2 = new student("Azim", "Turakulov", 25);
+// console.log(user1.fullNam());
+// console.log(user2);
+
+// function strStr(haystack, needle) {
+//   if (needle === "") {
+//     return 0;
+//   }
+
+//   let index = haystack.indexOf(needle);
+
+//   return index;
+// }
+
+// console.log(strStr("sadbutsad", "but"));
+
+//
+// if (n % 2 === 0) {
+//   console.log("juft");
+// } else {
+//   console.log("toq");
+// }
+for (let i = 0; i < n; i++) {
+  if (i % 2 === 0) {
+    sum = sum + i;
   }
 }
+// console.log(sum);
 
-var student1 = new students("Azimbek", "Turakulov", 25);
-var student2 = new students("Sardor", "Suyunov", 28);
-var student3 = new students("Asadbek", "Abduvoitov", 18);
+// if (n > 0) {
+//   console.log("manfiy");
+// } else if (n === 0) {
+//   console.log(n);
+// } else {
+//   console.log("musbat");
+// }
 
-console.log(student1.fullName("I.m student"));
-console.log(student2.fullName());
-console.log(student3.fullName());
+for (let i = 1; i <= 10; i++) {
+  // console.log(`${i} * ${n} = ${i * n}`);
+}
+
+for (let i = 0; i <= n; i++) {
+  sum += i;
+}
+// console.log(sum);
+var sum = 1;
+
+for (let i = 1; i <= n; i++) {
+  sum = i * sum;
+  // console.log(sum);
+}
+
+var n = 2019;
+
+if (n % 4 === 0) {
+  console.log("kabisa yili");
+} else {
+  console.log("emas");
+}
