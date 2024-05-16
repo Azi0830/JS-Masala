@@ -489,7 +489,26 @@ for (let i = 1; i <= n; i++) {
 var n = 2019;
 
 if (n % 4 === 0) {
-  console.log("kabisa yili");
+  // console.log("kabisa yili");
 } else {
-  console.log("emas");
+  // console.log("emas");
 }
+
+var shop = {
+  apple: {
+    count: 5,
+    price: 200,
+  },
+  anor: {
+    count: 2,
+    price: 1000,
+  },
+};
+
+var value = Object.values(shop);
+var sum = 0;
+
+for (let i = 0; i < value.length; i++) {
+  sum += value[i].count * value[i].price;
+}
+console.log(sum);
